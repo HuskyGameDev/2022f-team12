@@ -33,11 +33,18 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        GamePaused = false;
+
+        //pauseSlideTop.GetComponent<Animation>().play("MenuSlideTopReverse");
+        //THIS IS SUCH AN EASY THING TO DO WHY CAN'T I FIGURE THIS OUT
+
+
         pauseUI.SetActive(false);
         pauseSlideTop.SetActive(false);
         pauseSlideBottom.SetActive(false);
+        
         Time.timeScale = 1f;
-        GamePaused = false;
+        
 
        
 
@@ -45,13 +52,14 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        GamePaused = true;
         pauseUI.SetActive(true);
         pauseSlideTop.SetActive(true);
         pauseSlideBottom.SetActive(true);
 
 
         Time.timeScale = 0f;
-        GamePaused = true;
+        
 
     }
 
