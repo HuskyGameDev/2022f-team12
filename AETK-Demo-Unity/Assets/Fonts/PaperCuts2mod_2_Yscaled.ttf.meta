@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 593cd4172b9a7fd4bb220bcaa19a2755
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Paper Cuts 2
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a3b78cc54b8c46940821e15735fc5692, type: 3}
+  - {fileID: 12800000, guid: 51a848e5a19aa3d4980aa054cdd46a92, type: 3}
+  - {fileID: 12800000, guid: 7b225189aecc62149865ca91aaa8c178, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
