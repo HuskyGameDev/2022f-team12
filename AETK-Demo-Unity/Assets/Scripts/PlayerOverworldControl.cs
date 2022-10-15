@@ -10,6 +10,7 @@ public class PlayerOverworldControl : MonoBehaviour
     public float MaxYVel = 1f;
     public float MaxSlopeCheckExtent = 4f;
     public BoxCollider2D GroundCollider;
+    public Transform SpriteRoot;
 
     private Rigidbody2D rb;
     private float yVel = 0f;
@@ -83,7 +84,8 @@ public class PlayerOverworldControl : MonoBehaviour
         // Set xMult to be the minimum of the speed multipliers determined by both casts.
         float xMult = Mathf.Min(tL_Mult, tR_Mult);
 
-        rbPos.x += Input.GetAxisRaw("Move_Horizontal") * MoveSpeed * xMult * Time.fixedDeltaTime;
+        var xVel = Input.GetAxisRaw("Move_Horizontal") * MoveSpeed * xMult * Time.fixedDeltaTime;
+        rbPos.x += xVel;
 
         // Limit yVel. //
         bool yVelNeg = yVel < 0;
@@ -93,6 +95,16 @@ public class PlayerOverworldControl : MonoBehaviour
 
         // Apply Position. //
         rb.position = rbPos;
+
+        // Set Sprite Flip. //
+        var scale = this.SpriteRoot.localScale;
+
+        if (xVel > 0)
+            scale.x = 1;
+        else if (xVel < 0)
+            scale.x = -1;
+
+        this.SpriteRoot.localScale = scale;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
