@@ -1,24 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using UnityEngine;
 
 public class PlayerOverworldControl : MonoBehaviour
 {
+    public enum GroundType { Flat, Slope };
+
     public float MoveSpeed = 0.5f;
     public float GravityAcceleration = 9.8f;
     public float JumpVel = 3f;
     public float MaxYVel = 1f;
-    public float MaxSlopeCheckExtent = 4f;
-    public BoxCollider2D GroundCollider;
+    public float SlopeGroundingVel = -4f;
+    //public float MaxSlopeCheckExtent = 4f;
     public Transform SpriteRoot;
+    public CharacterController CController;
 
-    private Rigidbody2D rb;
     private float yVel = 0f;
-    private bool grounded = false;
+    private Vector3 collisionNormal;
+    private GroundType groundType;
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -28,73 +31,44 @@ public class PlayerOverworldControl : MonoBehaviour
         {
             Debug.Log("fdsaafds");
         }
-        
-        // If not grounded apply gravity acceleration to yVel.
-        if (!this.grounded)
+
+        // If yVel was grounded upon last update, reset the yVel.
+        if (this.CController.isGrounded)
         {
-            yVel += GravityAcceleration * Time.fixedDeltaTime;
+            // Set the initial yVel (at the start of this update) depending on the current ground. //
+            switch (this.groundType)
+            {
+                case GroundType.Slope:
+                    yVel = SlopeGroundingVel;
+                    break;
+                default:
+                    yVel = 0;
+                    break;
+            }
         }
-        // If grounded, zero yVel;
-        else 
-        {
-            yVel = 0;
-        }
+
+        yVel -= GravityAcceleration * Time.fixedDeltaTime;
 
         if (Input.GetButtonDown("Jump"))
         {
             Debug.Log("Jump!");
 
-            yVel = -JumpVel;
-            this.grounded = false;
-        }
-
-        // Store current rb pos. //
-        var rbPos = rb.position;
-
-        // Slope Speed correction. //
-        var bounds = GroundCollider.bounds;
-        var tL_Corner = new Vector2(bounds.center.x - bounds.extents.x, bounds.center.y + bounds.extents.y);
-        var tR_Corner = new Vector2(bounds.center.x + bounds.extents.x, bounds.center.y + bounds.extents.y);
-
-        var mask = ~LayerMask.GetMask("Player");
-        var tL_Cast = Physics2D.Raycast(tL_Corner, Vector2.down, MaxSlopeCheckExtent, mask);
-        var tR_Cast = Physics2D.Raycast(tR_Corner, Vector2.down, MaxSlopeCheckExtent, mask);
-
-        Debug.DrawLine(tL_Corner, tL_Corner + Vector2.down * MaxSlopeCheckExtent);
-        Debug.DrawLine(tR_Corner, tR_Corner + Vector2.down * MaxSlopeCheckExtent);
-
-        float tL_Mult = 1f;
-        if (tL_Cast.collider != null)
-        {
-            var norm = tL_Cast.normal;
-            var angle = Mathf.Atan2(norm.y, norm.x);
-            if (norm != Vector2.zero)
-                tL_Mult = Mathf.Abs(Mathf.Sin(angle));
-        }
-
-        float tR_Mult = 1f;
-        if (tR_Cast.collider != null)
-        {
-            var norm = tR_Cast.normal;
-            var angle = Mathf.Atan2(norm.y, norm.x);
-            if (norm != Vector2.zero)
-                tR_Mult = Mathf.Abs(Mathf.Sin(angle));
+            yVel = JumpVel;
         }
 
         // Set xMult to be the minimum of the speed multipliers determined by both casts.
-        float xMult = Mathf.Min(tL_Mult, tR_Mult);
+        float xMult = this.CController.isGrounded ? Vector3.Dot(Vector3.up, this.collisionNormal) : 1f; //Mathf.Min(tL_Mult, tR_Mult);
 
         var xVel = Input.GetAxisRaw("Move_Horizontal") * MoveSpeed * xMult * Time.fixedDeltaTime;
-        rbPos.x += xVel;
+        /*rbPos.x += xVel;*/
 
         // Limit yVel. //
         bool yVelNeg = yVel < 0;
         yVel = Mathf.Min(Mathf.Abs(yVel), MaxYVel);
         yVel *= yVelNeg ? -1 : 1;
-        rbPos.y -= yVel;
 
         // Apply Position. //
-        rb.position = rbPos;
+        this.CController.Move(new Vector3(xVel, yVel));
 
         // Set Sprite Flip. //
         var scale = this.SpriteRoot.localScale;
@@ -107,13 +81,34 @@ public class PlayerOverworldControl : MonoBehaviour
         this.SpriteRoot.localScale = scale;
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        grounded = true;
+        if (this.CController.collisionFlags == CollisionFlags.Below)
+        {
+            this.collisionNormal = hit.normal;
+
+            switch (hit.collider.tag)
+            {
+                case "Col_Slope":
+                    this.groundType = GroundType.Slope;
+                    break;
+                default:
+                    this.groundType = GroundType.Flat;
+                    break;
+            }
+        }
+        
+        // print the impact point's normal
+        //Debug.Log("Normal vector we collided at: " + hit.normal + ", CFlags: " + this.CController.collisionFlags);
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        grounded = false;
-    }
+    /*    private void OnCollisionStay(Collision collision)
+        {
+            grounded = true;
+        }
+
+        private void OnCollisionExit(Collision collision)
+        {
+            grounded = false;
+        }*/
 }
