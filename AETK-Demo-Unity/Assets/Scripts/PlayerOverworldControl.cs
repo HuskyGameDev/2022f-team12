@@ -101,14 +101,4 @@ public class PlayerOverworldControl : MonoBehaviour
         // print the impact point's normal
         //Debug.Log("Normal vector we collided at: " + hit.normal + ", CFlags: " + this.CController.collisionFlags);
     }
-
-    /*    private void OnCollisionStay(Collision collision)
-        {
-            grounded = true;
-        }
-
-        private void OnCollisionExit(Collision collision)
-        {
-            grounded = false;
-        }*/
 }
