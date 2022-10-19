@@ -5,14 +5,14 @@ using UnityEditor;
 using UnityEngine.UI;
 using TMPro;
 
-[CustomEditor(typeof(FPSCounter))]
+[CustomEditor(typeof(AGFPSCounter))]
 public class FPSCounterEditor : Editor
 {
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
-        FPSCounter counter = (FPSCounter)target;
+        AGFPSCounter counter = (AGFPSCounter)target;
 
         EditorGUILayout.LabelField("Base", EditorStyles.boldLabel);
         counter.GraphicsType = (TextType)EditorGUILayout.EnumPopup("Text Type", counter.GraphicsType);

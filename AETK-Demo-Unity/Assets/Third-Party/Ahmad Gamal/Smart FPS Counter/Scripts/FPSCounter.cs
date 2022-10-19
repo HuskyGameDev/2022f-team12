@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class FPSCounter : MonoBehaviour
+public class AGFPSCounter : MonoBehaviour
 {
     [HideInInspector] public Transform advancedTransform;
     [HideInInspector] public TextType GraphicsType;

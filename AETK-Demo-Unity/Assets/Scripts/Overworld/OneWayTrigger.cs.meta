@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: bd9e63a9f46bca34abaf98e130746048
+labels:
+- Overworld
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

@@ -1,8 +1,10 @@
 fileFormatVersion: 2
-guid: 697b32b4b2819664e980d09276330809
-NativeFormatImporter:
+guid: e687bc313d4b4074fbb18e9632b91310
+labels:
+- Overworld
+folderAsset: yes
+DefaultImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

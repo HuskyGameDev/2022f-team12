@@ -14,5 +14,7 @@ public class TPTriggerTest : MonoBehaviour
 		go.active = false;
 		go.transform.position = TPDest.position;
 		go.active = true;
+
+
 	}
 }
