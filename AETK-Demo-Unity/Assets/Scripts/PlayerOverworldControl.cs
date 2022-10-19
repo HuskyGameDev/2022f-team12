@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using UnityEngine;
@@ -68,7 +68,7 @@ public class PlayerOverworldControl : MonoBehaviour
         yVel *= yVelNeg ? -1 : 1;
 
         // Apply Position. //
-        this.CController.Move(new Vector3(xVel, yVel));
+	    this.CController.Move(new Vector3(xVel, yVel, 0));
 
         // Set Sprite Flip. //
         var scale = this.SpriteRoot.localScale;
