@@ -2,23 +2,37 @@
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using UnityEngine;
+using MyBox;
 
 public class PlayerOverworldControl : MonoBehaviour
 {
-    public enum GroundType { Flat, Slope };
+    public enum MovementTypes { Flat, Depth };
+    public enum GroundTypes { Flat, Slope };
 
-    public float MoveSpeed = 0.5f;
+    public float MoveSpeedX = 0.5f;
+    public float MoveSpeedZ = 0.5f;
+    [Separator]
     public float GravityAcceleration = 9.8f;
     public float JumpVel = 3f;
     public float MaxYVel = 1f;
     public float SlopeGroundingVel = -4f;
-    //public float MaxSlopeCheckExtent = 4f;
     public Transform SpriteRoot;
     public CharacterController CController;
 
+    public MovementTypes MovementType
+    {
+        get { return movementType; }
+        set { movementType = value; }
+    }
+
+    [Separator]
+
+    [SerializeField]
+    private MovementTypes movementType = MovementTypes.Flat;
+
     private float yVel = 0f;
     private Vector3 collisionNormal;
-    private GroundType groundType;
+    private GroundTypes groundType;
 
     void Awake()
     {
@@ -38,7 +52,7 @@ public class PlayerOverworldControl : MonoBehaviour
             // Set the initial yVel (at the start of this update) depending on the current ground. //
             switch (this.groundType)
             {
-                case GroundType.Slope:
+                case GroundTypes.Slope:
                     yVel = SlopeGroundingVel;
                     break;
                 default:
@@ -56,11 +70,19 @@ public class PlayerOverworldControl : MonoBehaviour
             yVel = JumpVel;
         }
 
-        // Set xMult to be the minimum of the speed multipliers determined by both casts.
-        float xMult = this.CController.isGrounded ? Vector3.Dot(Vector3.up, this.collisionNormal) : 1f; //Mathf.Min(tL_Mult, tR_Mult);
+        float xMult = this.CController.isGrounded ? Vector3.Dot(Vector3.up, this.collisionNormal) : 1f;
+        float zMult = this.CController.isGrounded ? Vector3.Dot(Vector3.up, this.collisionNormal) : 1f;
 
-        var xVel = Input.GetAxisRaw("Move_Horizontal") * MoveSpeed * xMult * Time.fixedDeltaTime;
-        /*rbPos.x += xVel;*/
+        // Calculate xVel. //
+        var xVel = Input.GetAxisRaw("Move_Horizontal") * MoveSpeedX * xMult * Time.fixedDeltaTime;
+
+        // Calculate zVel depending on MovementType. //
+        var zVel = 0f;
+
+        if ( MovementType == MovementTypes.Depth )
+        { 
+            zVel = Input.GetAxisRaw("Move_Vertical") * MoveSpeedZ * zMult * Time.fixedDeltaTime;
+        }
 
         // Limit yVel. //
         bool yVelNeg = yVel < 0;
@@ -68,7 +90,7 @@ public class PlayerOverworldControl : MonoBehaviour
         yVel *= yVelNeg ? -1 : 1;
 
         // Apply Position. //
-	    this.CController.Move(new Vector3(xVel, yVel, 0));
+	    this.CController.Move(new Vector3(xVel, yVel, zVel));
 
         // Set Sprite Flip. //
         var scale = this.SpriteRoot.localScale;
@@ -90,10 +112,10 @@ public class PlayerOverworldControl : MonoBehaviour
             switch (hit.collider.tag)
             {
                 case "Col_Slope":
-                    this.groundType = GroundType.Slope;
+                    this.groundType = GroundTypes.Slope;
                     break;
                 default:
-                    this.groundType = GroundType.Flat;
+                    this.groundType = GroundTypes.Flat;
                     break;
             }
         }
