@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MyBox;
 using DG.Tweening;
+using static PlayerOverworldControl;
 
 public class MoveTransition : MonoBehaviour
 {
@@ -27,14 +28,17 @@ public class MoveTransition : MonoBehaviour
         {
             // Re-assign collision layer to Player object + all children. //
             int destLayer = 0;
+            MovementTypes destMT = MovementTypes.Flat;
 
             switch (TransitionType)
             {
                 case TransitionTypes.ToDepth:
                     destLayer = LayerMask.NameToLayer("Col_DepthMove");
+                    destMT = MovementTypes.Depth;
                     break;
                 case TransitionTypes.ToFlat:
                     destLayer = LayerMask.NameToLayer("Col_FlatMove");
+                    destMT = MovementTypes.Flat;
                     break;
             }
 
@@ -47,6 +51,7 @@ public class MoveTransition : MonoBehaviour
 
             // Re-Enable Player Controller. //
             oc.enabled = true;
+            oc.MovementType = destMT;
         };
 
         go.transform.DOMove(DestinationPoint.position, 2).OnComplete( onComplete );
