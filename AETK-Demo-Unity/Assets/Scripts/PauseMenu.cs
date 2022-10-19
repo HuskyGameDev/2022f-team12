@@ -10,6 +10,18 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseSlideTop;
     public GameObject pauseSlideBottom;
 
+    public Animator topAnim;
+    public Animator bottomAnim;
+
+
+    void Start()
+    {
+
+    }
+
+
+
+
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +33,7 @@ public class PauseMenu : MonoBehaviour
             }
             else
             {
+                
                 Pause();
 
             }
@@ -35,14 +48,10 @@ public class PauseMenu : MonoBehaviour
     {
         GamePaused = false;
 
-        //pauseSlideTop.GetComponent<Animation>().play("MenuSlideTopReverse");
-        //THIS IS SUCH AN EASY THING TO DO WHY CAN'T I FIGURE THIS OUT
 
+        topAnim.SetBool("Transition", false);
+        bottomAnim.SetBool("Transition", false);
 
-        pauseUI.SetActive(false);
-        pauseSlideTop.SetActive(false);
-        pauseSlideBottom.SetActive(false);
-        
         Time.timeScale = 1f;
         
 
@@ -53,9 +62,10 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         GamePaused = true;
-        pauseUI.SetActive(true);
-        pauseSlideTop.SetActive(true);
-        pauseSlideBottom.SetActive(true);
+        
+
+        topAnim.SetBool("Transition", true);
+        bottomAnim.SetBool("Transition", true);
 
 
         Time.timeScale = 0f;
