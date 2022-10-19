@@ -4,6 +4,7 @@ using UnityEngine;
 using MyBox;
 using DG.Tweening;
 using static PlayerOverworldControl;
+using TeamRotten;
 
 public class MoveTransition : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class MoveTransition : MonoBehaviour
 
     [ConditionalField(nameof(DestinationType), false, DestinationTypes.Point)]
     public Transform DestinationPoint;
+
+    [ConditionalField(nameof(DestinationType), false, DestinationTypes.Area)]
+    public Collider DestinationCollider;
 
     private void OnTriggerEnter(Collider collision)
     {
