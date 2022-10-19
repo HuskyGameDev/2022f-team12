@@ -17,7 +17,8 @@ public class BBTransformTest : MonoBehaviour
         Gizmos.DrawWireCube(FromBox.bounds.center, FromBox.bounds.size);
         Gizmos.DrawWireCube(ToBox.bounds.center, ToBox.bounds.size);
         Gizmos.DrawSphere(FromPoint.position, 0.2f);
-        Gizmos.DrawSphere(AssMath.BoxTransform(FromPoint.position, FromBox, ToBox), 0.2f);
+        var destPoint = AssMath.BoxTransform(FromPoint.position, FromBox, ToBox);
+        Gizmos.DrawSphere(destPoint, 0.2f);
     }
 
     // Update is called once per frame

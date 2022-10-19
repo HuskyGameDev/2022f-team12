@@ -26,16 +26,27 @@ namespace TeamRotten
         // Transform a point between two Collision boxes.
         public static Vector3 BoxTransform(Vector3 vec, BoxCollider b1, BoxCollider b2)
         {
-            // Create a translation matrix between the two Colliders. //
-            var trs = Matrix4x4.TRS
-            (
-                b2.bounds.center - b1.bounds.center,
-                b2.transform.rotation * Quaternion.Inverse(b1.transform.rotation),
-                Vector3_Divide(Vector3.Scale(b2.size, b2.transform.lossyScale), Vector3.Scale(b1.size, b1.transform.lossyScale))
-            );
+            // First, Translate vec to be around 0, 0, 0 (relative to b1's center). //
+            vec -= b1.bounds.center;
 
-            // Apply the TRS matrix to vec. //
-            return trs.MultiplyPoint(vec);
+            // Apply our transformations. //
+            var b1WorldScale = Vector3.Scale(b1.size, b1.transform.lossyScale);
+            var b2WorldScale = Vector3.Scale(b2.size, b2.transform.lossyScale);
+
+            // First, undo b1's rotation on vec.
+            var undoRotM = Matrix4x4.Rotate( Quaternion.Inverse(b1.transform.rotation) );
+            // Second, scale vec appropriately.
+            var scaleM   = Matrix4x4.Scale( Vector3_Divide(b2WorldScale, b1WorldScale) );
+            // Third, rotate vec by b2's rotation.
+            var rotM     = Matrix4x4.Rotate(b2.transform.rotation);
+
+            // Apply each of the previous transformations, in order.
+            vec = (rotM * scaleM * undoRotM).MultiplyPoint(vec);
+
+            // Finally, translate vec to be relative to b2's center.
+            vec += b2.bounds.center;
+
+            return vec;
         }
     }
 }
