@@ -6,7 +6,7 @@ using DG.Tweening;
 using static PlayerOverworldControl;
 using TeamRotten;
 
-public class MoveTransition : MonoBehaviour
+public class MoveTransition : MonoBehaviour, IInteractable
 {
     public enum TransitionTypes { ToDepth, ToFlat };
     public enum DestinationTypes { Area, Point };
@@ -22,16 +22,15 @@ public class MoveTransition : MonoBehaviour
     [ConditionalField(nameof(DestinationType), false, DestinationTypes.Area)]
     public BoxCollider DestinationBox;
 
-    private Vector3? destPosTest = null;
-    private void OnTriggerEnter(Collider collision)
+    public void OnInteract( PlayerOverworldControl pc )
     {
-        var go = collision.gameObject;
+        var go = pc.gameObject;
         var go_tf = go.transform;
 
-        var oc = go.GetComponent<PlayerOverworldControl>();
+        // Disable the Player Controller.
+        pc.enabled = false;
 
-        oc.enabled = false;
-
+        // Determine the destination position + layer. //
         Vector3 destPos = go_tf.position;
         int destLayer = 0;
         MovementTypes destMT = MovementTypes.Flat;
@@ -59,9 +58,7 @@ public class MoveTransition : MonoBehaviour
                 break;
         }
 
-        this.destPosTest = destPos;
-
-        TweenCallback onComplete = () => 
+        TweenCallback onComplete = () =>
         {
             // Re-assign collision layer to Player object + all children. //
             go.layer = destLayer;
@@ -72,19 +69,11 @@ public class MoveTransition : MonoBehaviour
             }
 
             // Re-Enable Player Controller. //
-            oc.enabled = true;
-            oc.MovementType = destMT;
+            pc.enabled = true;
+            pc.MovementType = destMT;
         };
 
-        go.transform.DOMove(destPos, 2).OnComplete( onComplete );
+        // Perform the transition. //
+        go.transform.DOMove(destPos, 2).OnComplete(onComplete);
     }
-
-    private void OnDrawGizmos()
-    {
-        if (this.destPosTest.HasValue)
-        {
-            Gizmos.DrawSphere(this.destPosTest.Value, 1f);
-        }
-    }
-
 }

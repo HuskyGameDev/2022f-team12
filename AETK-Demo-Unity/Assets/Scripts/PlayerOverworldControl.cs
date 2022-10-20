@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using UnityEngine;
 using MyBox;
+using System.Linq;
 
 public class PlayerOverworldControl : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class PlayerOverworldControl : MonoBehaviour
     public float SlopeGroundingVel = -4f;
     public Transform SpriteRoot;
     public CharacterController CController;
+    [Separator]
+    public Transform InteractOrigin;
+    public float InteractRadius;
 
     public MovementTypes MovementType
     {
@@ -41,9 +45,56 @@ public class PlayerOverworldControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if ( Input.GetButtonDown("IMenu_Toggle") )
+        if (Input.GetButtonDown("IMenu_Toggle"))
         {
-            Debug.Log("fdsaafds");
+            Debug.Log("IMenu_Toggle Pressed");
+        }
+
+        if (Input.GetButtonDown("Overworld_Interact"))
+        {
+            string castLayer = "";
+
+            switch ( movementType )
+            {
+                case MovementTypes.Flat:
+                    castLayer = "Trig_FlatMove";
+                    break;
+                case MovementTypes.Depth:
+                    castLayer = "Trig_DepthMove";
+                    break;
+            }
+
+            var cast = 
+                Physics.OverlapSphere(
+                    InteractOrigin.position, 
+                    InteractRadius, 
+                    LayerMask.GetMask(castLayer), 
+                    QueryTriggerInteraction.Collide
+                    );
+
+            // If there are multiple collisions, determine the closest //
+            // collider whose GO contains an IInteractable.            //
+            float lDist = float.MaxValue;
+            IInteractable lInter = null;
+
+            foreach (var c in cast)
+            {
+                var inter = c.GetComponent<IInteractable>();
+
+                if (inter == null)
+                    continue;
+
+                var dist = Vector3.Distance(transform.position, c.transform.position);
+
+                if ( dist < lDist )
+                {
+                    lDist = dist;
+                    lInter = inter;
+                }
+            }
+
+            if (lInter != null)
+                lInter.OnInteract(this);
         }
 
         // If yVel was grounded upon last update, reset the yVel.
@@ -122,5 +173,11 @@ public class PlayerOverworldControl : MonoBehaviour
         
         // print the impact point's normal
         //Debug.Log("Normal vector we collided at: " + hit.normal + ", CFlags: " + this.CController.collisionFlags);
+    }
+
+    private void OnDrawGizmos()
+    {
+        // Draw Interact Sphere.
+        Gizmos.DrawWireSphere(InteractOrigin.position, InteractRadius);
     }
 }
