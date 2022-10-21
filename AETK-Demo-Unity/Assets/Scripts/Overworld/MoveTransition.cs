@@ -85,10 +85,15 @@ public class MoveTransition : MonoBehaviour, IFlatDoorway
         // Enact any object fades that need to occur. //
         if (ObjectFade)
         {
-            var mat = FadeTarget.GetComponent<Renderer>().material;
-            var toColor = mat.color;
-            toColor.a = FadeType == FadeTypes.FadeIn ? 1 : 0;
-            mat.DOColor(toColor, TransitionTime);
+            var rends = FadeTarget.GetComponentsInChildren<Renderer>();
+            foreach (var r in rends)
+            {
+                var mat = r.material;
+                var toColor = mat.color;
+                toColor.a = FadeType == FadeTypes.FadeIn ? 1 : 0;
+
+                mat.DOColor(toColor, TransitionTime);
+            }
         }
 
         // Perform the transition. //
