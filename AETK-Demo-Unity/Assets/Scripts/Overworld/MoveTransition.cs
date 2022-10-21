@@ -6,7 +6,7 @@ using DG.Tweening;
 using static PlayerOverworldControl;
 using TeamRotten;
 
-public class MoveTransition : MonoBehaviour, IInteractable
+public class MoveTransition : MonoBehaviour, IFlatDoorway
 {
     public enum TransitionTypes { ToDepth, ToFlat };
     public enum DestinationTypes { Area, Point };
@@ -14,8 +14,10 @@ public class MoveTransition : MonoBehaviour, IInteractable
     public TransitionTypes TransitionType;
     public DestinationTypes DestinationType;
 
+    public float TransitionTime = 1f;
+
     [ConditionalField(nameof(DestinationType), false, DestinationTypes.Point)]
-    public Transform DestinationPoint;
+    public MoveTransitionPoint DestinationPoint;
 
     [ConditionalField(nameof(DestinationType), false, DestinationTypes.Area)]
     public BoxCollider OriginBox;
@@ -38,7 +40,7 @@ public class MoveTransition : MonoBehaviour, IInteractable
         switch (DestinationType)
         {
             case DestinationTypes.Point:
-                destPos = DestinationPoint.position;
+                destPos = DestinationPoint.GetTransitionPoint();
                 break;
             case DestinationTypes.Area:
                 destPos = AssMath.BoxTransform(go_tf.position, OriginBox, DestinationBox);
@@ -74,6 +76,6 @@ public class MoveTransition : MonoBehaviour, IInteractable
         };
 
         // Perform the transition. //
-        go.transform.DOMove(destPos, 0.5f).OnComplete(onComplete);
+        go.transform.DOMove(destPos, TransitionTime).OnComplete(onComplete);
     }
 }
