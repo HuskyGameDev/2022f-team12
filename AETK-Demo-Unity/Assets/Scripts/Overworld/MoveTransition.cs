@@ -74,6 +74,6 @@ public class MoveTransition : MonoBehaviour, IInteractable
         };
 
         // Perform the transition. //
-        go.transform.DOMove(destPos, 2).OnComplete(onComplete);
+        go.transform.DOMove(destPos, 0.5f).OnComplete(onComplete);
     }
 }
