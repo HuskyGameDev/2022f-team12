@@ -1611,6 +1611,9 @@ MonoBehaviour:
   DestinationPoint: {fileID: 1254017732}
   OriginBox: {fileID: 0}
   DestinationBox: {fileID: 0}
+  ObjectFade: 1
+  FadeType: 0
+  FadeTarget: {fileID: 638433090}
 --- !u!114 &864942667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2171,6 +2174,9 @@ MonoBehaviour:
   DestinationPoint: {fileID: 1083174353}
   OriginBox: {fileID: 1033900568}
   DestinationBox: {fileID: 1083174354}
+  ObjectFade: 0
+  FadeType: 0
+  FadeTarget: {fileID: 0}
 --- !u!65 &1033900568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2434,6 +2440,9 @@ MonoBehaviour:
   DestinationPoint: {fileID: 1837206627}
   OriginBox: {fileID: 1300975149}
   DestinationBox: {fileID: 1837206628}
+  ObjectFade: 0
+  FadeType: 0
+  FadeTarget: {fileID: 0}
 --- !u!114 &1300975151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2514,6 +2523,9 @@ MonoBehaviour:
   DestinationPoint: {fileID: 366526160}
   OriginBox: {fileID: 0}
   DestinationBox: {fileID: 0}
+  ObjectFade: 1
+  FadeType: 1
+  FadeTarget: {fileID: 638433090}
 --- !u!65 &1308784738
 BoxCollider:
   m_ObjectHideFlags: 0

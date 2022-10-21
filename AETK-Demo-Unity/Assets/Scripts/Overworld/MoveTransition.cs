@@ -10,6 +10,7 @@ public class MoveTransition : MonoBehaviour, IFlatDoorway
 {
     public enum TransitionTypes { ToDepth, ToFlat };
     public enum DestinationTypes { Area, Point };
+    public enum FadeTypes { FadeIn, FadeOut };
 
     public TransitionTypes TransitionType;
     public DestinationTypes DestinationType;
@@ -23,6 +24,12 @@ public class MoveTransition : MonoBehaviour, IFlatDoorway
     public BoxCollider OriginBox;
     [ConditionalField(nameof(DestinationType), false, DestinationTypes.Area)]
     public BoxCollider DestinationBox;
+
+    public bool ObjectFade = false;
+    [ConditionalField(nameof(ObjectFade), false, true)]
+    public FadeTypes FadeType;
+    [ConditionalField(nameof(ObjectFade), false, true)]
+    public GameObject FadeTarget;
 
     public void OnInteract( PlayerOverworldControl pc )
     {
@@ -74,6 +81,15 @@ public class MoveTransition : MonoBehaviour, IFlatDoorway
             pc.enabled = true;
             pc.MovementType = destMT;
         };
+
+        // Enact any object fades that need to occur. //
+        if (ObjectFade)
+        {
+            var mat = FadeTarget.GetComponent<Renderer>().material;
+            var toColor = mat.color;
+            toColor.a = FadeType == FadeTypes.FadeIn ? 1 : 0;
+            mat.DOColor(toColor, TransitionTime);
+        }
 
         // Perform the transition. //
         go.transform.DOMove(destPos, TransitionTime).OnComplete(onComplete);
