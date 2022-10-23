@@ -1,0 +1,3332 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1311846235340630462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311846235340630463}
+  - component: {fileID: 1311846235340630461}
+  - component: {fileID: 1311846235340630460}
+  - component: {fileID: 8752798892125752024}
+  m_Layer: 5
+  m_Name: Dialoguer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1311846235340630463
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311846235340630462}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1311846235340630461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311846235340630462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffcfb6d0266347848bf69a03919f483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showTextFoldout: 1
+  showAppearanceFoldout: 1
+  showMaterialFoldout: 1
+  showPositionFoldout: 1
+  showTimingFoldout: 1
+  showFunctionalityFoldout: 1
+  showAudioFoldout: 0
+  showEventFoldout: 1
+  showBetaFoldout: 0
+  info:
+  - pos: {x: -698.0113, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 18
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -657.24426, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.04
+    unreadTime: 0
+    line: 0
+    rawIndex: 19
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -632.3863, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.08
+    unreadTime: 0
+    line: 0
+    rawIndex: 20
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -618.4658, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.12
+    unreadTime: 0
+    line: 0
+    rawIndex: 21
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -582.6704, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.16
+    unreadTime: 0
+    line: 0
+    rawIndex: 22
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -546.87494, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.19999999
+    unreadTime: 0
+    line: 0
+    rawIndex: 23
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -507.1022, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.23999998
+    unreadTime: 0
+    line: 0
+    rawIndex: 24
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -468.3238, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.27999997
+    unreadTime: 0
+    line: 0
+    rawIndex: 25
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -445.45447, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.31999996
+    unreadTime: 0
+    line: 0
+    rawIndex: 26
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -406.67606, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.35999995
+    unreadTime: 0
+    line: 0
+    rawIndex: 27
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -370.8806, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.39999995
+    unreadTime: 0
+    line: 0
+    rawIndex: 28
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -346.02267, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.43999994
+    unreadTime: 0
+    line: 0
+    rawIndex: 29
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -306.24994, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.47999993
+    unreadTime: 0
+    line: 0
+    rawIndex: 30
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -266.4772, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.5199999
+    unreadTime: 0
+    line: 0
+    rawIndex: 31
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -226.70447, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.55999994
+    unreadTime: 0
+    line: 0
+    rawIndex: 32
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -187.92603, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.59999996
+    unreadTime: 0
+    line: 0
+    rawIndex: 33
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -152.13062, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.64
+    unreadTime: 0
+    line: 0
+    rawIndex: 34
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -104.40332, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.68
+    unreadTime: 0
+    line: 0
+    rawIndex: 35
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -67.613525, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.72
+    unreadTime: 0
+    line: 0
+    rawIndex: 36
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -29.829407, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.76000005
+    unreadTime: 0
+    line: 0
+    rawIndex: 37
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 10.937622, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.8000001
+    unreadTime: 0
+    line: 0
+    rawIndex: 38
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 48.72174, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.8400001
+    unreadTime: 0
+    line: 0
+    rawIndex: 39
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 84.51721, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.8800001
+    unreadTime: 0
+    line: 0
+    rawIndex: 40
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 125.28424, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.92000014
+    unreadTime: 0
+    line: 0
+    rawIndex: 41
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 161.07971, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 0.96000016
+    unreadTime: 0
+    line: 0
+    rawIndex: 42
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 201.84674, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.0000001
+    unreadTime: 0
+    line: 0
+    rawIndex: 43
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 239.63086, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.0400001
+    unreadTime: 0
+    line: 0
+    rawIndex: 44
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 279.40356, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.08
+    unreadTime: 0
+    line: 0
+    rawIndex: 45
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 302.27295, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.12
+    unreadTime: 0
+    line: 0
+    rawIndex: 46
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 320.17065, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.16
+    unreadTime: 0
+    line: 0
+    rawIndex: 47
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 362.92627, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.1999999
+    unreadTime: 0
+    line: 0
+    rawIndex: 48
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 400.71045, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.2399999
+    unreadTime: 0
+    line: 0
+    rawIndex: 49
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 436.50586, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.2799999
+    unreadTime: 0
+    line: 0
+    rawIndex: 50
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 461.36377, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.3199998
+    unreadTime: 0
+    line: 0
+    rawIndex: 51
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 498.15356, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.3599998
+    unreadTime: 0
+    line: 0
+    rawIndex: 52
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 537.9263, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.3999997
+    unreadTime: 0
+    line: 0
+    rawIndex: 53
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 562.7842, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.4399997
+    unreadTime: 0
+    line: 0
+    rawIndex: 54
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 598.5796, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.4799997
+    unreadTime: 0
+    line: 0
+    rawIndex: 55
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 623.4375, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.5199996
+    unreadTime: 0
+    line: 0
+    rawIndex: 56
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 660.2273, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.5599996
+    unreadTime: 0
+    line: 0
+    rawIndex: 57
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 772.5852, y: 75.61134, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.5999995
+    unreadTime: 0
+    line: 1
+    rawIndex: 58
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -623.43744, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.6399995
+    unreadTime: 0
+    line: 1
+    rawIndex: 59
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -561.7897, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.6799995
+    unreadTime: 0
+    line: 1
+    rawIndex: 60
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -522.01697, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.7199994
+    unreadTime: 0
+    line: 1
+    rawIndex: 61
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -483.2386, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.7599994
+    unreadTime: 0
+    line: 1
+    rawIndex: 62
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -447.4431, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.7999994
+    unreadTime: 0
+    line: 1
+    rawIndex: 63
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -422.58514, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.8399993
+    unreadTime: 0
+    line: 1
+    rawIndex: 64
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -385.79538, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.8799993
+    unreadTime: 0
+    line: 1
+    rawIndex: 65
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -346.02264, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.9199992
+    unreadTime: 0
+    line: 1
+    rawIndex: 66
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -321.1647, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.9599992
+    unreadTime: 0
+    line: 1
+    rawIndex: 67
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -285.36926, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 1.9999992
+    unreadTime: 0
+    line: 1
+    rawIndex: 68
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -244.60223, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.0399992
+    unreadTime: 0
+    line: 1
+    rawIndex: 69
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -230.68176, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.0799992
+    unreadTime: 0
+    line: 1
+    rawIndex: 70
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -188.92041, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.1199992
+    unreadTime: 0
+    line: 1
+    rawIndex: 71
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -151.13635, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.1599991
+    unreadTime: 0
+    line: 1
+    rawIndex: 72
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -115.34088, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.199999
+    unreadTime: 0
+    line: 1
+    rawIndex: 73
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -77.55676, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.239999
+    unreadTime: 0
+    line: 1
+    rawIndex: 74
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -39.772644, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.279999
+    unreadTime: 0
+    line: 1
+    rawIndex: 75
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: -1.9885254, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.319999
+    unreadTime: 0
+    line: 1
+    rawIndex: 76
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 36.789856, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.359999
+    unreadTime: 0
+    line: 1
+    rawIndex: 77
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 72.58533, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.399999
+    unreadTime: 0
+    line: 1
+    rawIndex: 78
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 95.45465, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.4399989
+    unreadTime: 0
+    line: 1
+    rawIndex: 79
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 135.22736, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.4799988
+    unreadTime: 0
+    line: 1
+    rawIndex: 80
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 175.00006, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.5199988
+    unreadTime: 0
+    line: 1
+    rawIndex: 81
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 211.78986, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.5599988
+    unreadTime: 0
+    line: 1
+    rawIndex: 82
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 229.68756, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.5999987
+    unreadTime: 0
+    line: 1
+    rawIndex: 83
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 268.46594, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.6399987
+    unreadTime: 0
+    line: 1
+    rawIndex: 84
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 315.19897, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.6799986
+    unreadTime: 0
+    line: 1
+    rawIndex: 85
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 350.9944, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.7199986
+    unreadTime: 0
+    line: 1
+    rawIndex: 86
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 386.7898, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.7599986
+    unreadTime: 0
+    line: 1
+    rawIndex: 87
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 426.5625, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.7999985
+    unreadTime: 0
+    line: 1
+    rawIndex: 88
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 467.3296, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.8399985
+    unreadTime: 0
+    line: 1
+    rawIndex: 89
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 487.21606, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.9199984
+    unreadTime: 0
+    line: 1
+    rawIndex: 90
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 11400000, guid: 2a6d01a99e42e4a1ea7e74e160f25b84, type: 2}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 523.0115, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.9599984
+    unreadTime: 0
+    line: 1
+    rawIndex: 91
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 540.9092, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 2.9999983
+    unreadTime: 0
+    line: 1
+    rawIndex: 92
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 576.7046, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 3.4399984
+    unreadTime: 0
+    line: 1
+    rawIndex: 98
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 592.6135, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 3.8799984
+    unreadTime: 0
+    line: 1
+    rawIndex: 104
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 608.5227, y: -18.888657, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1.08
+    isEndOfParagraph: 0
+    readTime: 4.3199983
+    unreadTime: 0
+    line: 1
+    rawIndex: 110
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 596e5f73942e4a645b94b7a99f560026, type: 2}
+    size: {x: 87.5, y: 87.5}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0.04
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 88
+    submeshChange: 0
+    invoked: 1
+  lineHeights:
+  - 94.5
+  - 94.5
+  - 94.5
+  _text: <drawAnim=AssText>It's only today where I realize that the man that I've
+    been looking for, is<d=10>.<d=10>.<d=10>.
+  drawText: It's only today where I realize that the man that I've been looking for,
+    is...
+  hyphenedText: 'It''s only today where I realize that the
+
+    man that I''ve been
+    looking for, is...'
+  font: {fileID: 12800000, guid: 593cd4172b9a7fd4bb220bcaa19a2755, type: 3}
+  _color32:
+    serializedVersion: 2
+    rgba: 4294967295
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  forceAnimation: 0
+  richText: 1
+  readDelay: 0.04
+  speedReadScale: 2
+  ignoreTimeScale: 1
+  disableAnimatedText: 0
+  drawAnimName: Appear
+  unreadDelay: 0.01
+  undrawOrder: 1
+  undrawAnimName: Appear
+  audioSource: {fileID: 0}
+  audioClips: []
+  stopPreviousSound: 1
+  pitchMode: 0
+  overridePitch: 1
+  minPitch: 0.9
+  maxPitch: 1.2
+  speedReadPitch: 0
+  perlinPitchMulti: 1
+  reading: 0
+  unreading: 0
+  size: 87.5
+  bestFitMulti: 1
+  quality: 88
+  filterMode: 1
+  maskMode: 0
+  style: 0
+  baseOffset: {x: 0, y: 0.12, z: 0}
+  relativeBaseOffset: 1
+  lineSpacing: 1.08
+  characterSpacing: 0
+  tabSize: 4
+  autoWrap: 12
+  uiWrap: 1
+  uiLimit: 1
+  breakText: 0
+  insertHyphens: 0
+  anchor: 3
+  alignment: 1
+  verticalLimit: 0
+  verticalLimitMode: 2
+  leftoverText: 
+  textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
+  textMesh: {fileID: 0}
+  rawTopLeftBounds: {x: 771.44775, y: -170.11134, z: 0}
+  rawBottomRightBounds: {x: -771.44775, y: 170.11134, z: 0}
+  rawBottomRightTextBounds: {x: 1396.0226, y: -189, z: 0}
+  topLeftBounds: {x: 188.55225, y: 408.38885, z: 0}
+  topRightBounds: {x: 1731.4478, y: 408.38885, z: 0}
+  bottomLeftBounds: {x: 188.55225, y: 68.16615, z: 0}
+  bottomRightBounds: {x: 1731.4478, y: 68.16615, z: 0}
+  centerBounds: {x: 960, y: 238.2775, z: 0}
+  topLeftTextBounds: {x: 261.9887, y: 332.7775, z: 0}
+  topRightTextBounds: {x: 1658.0112, y: 332.7775, z: 0}
+  bottomLeftTextBounds: {x: 261.9887, y: 143.7775, z: 0}
+  bottomRightTextBounds: {x: 1658.0112, y: 143.7775, z: 0}
+  centerTextBounds: {x: 960, y: 238.2775, z: 0}
+  finalTopLeftTextBounds: {x: 261.9887, y: 332.7775, z: 0}
+  finalTopRightTextBounds: {x: 1658.0112, y: 332.7775, z: 0}
+  finalBottomLeftTextBounds: {x: 261.9887, y: 143.7775, z: 0}
+  finalBottomRightTextBounds: {x: 1658.0112, y: 143.7775, z: 0}
+  finalCenterTextBounds: {x: 960, y: 238.2775, z: 0}
+  unwrappedBottomRightTextBounds: {x: 2679.687, y: -94.5, z: 0}
+  onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onUndrawnEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onRebuildEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onPrintEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onCustomEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onVertexMod:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: STMTest, Assembly-CSharp
+        m_MethodName: ChangeVertices
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPreParse:
+    m_PersistentCalls:
+      m_Calls: []
+  debugMode: 0
+  totalReadTime: 4.3700085
+  totalUnreadTime: 0.00001
+  currentReadTime: 9.044955
+  autoRead: 0
+  rememberReadPosition: 1
+  autoQuality: 1
+  drawOrder: 0
+  removeEmoji: 1
+  rtl: 0
+  _fade: 1
+  bestFit: 0
+  latestNumber: 77
+  currentUnReadTime: 0
+  preParsedText: <drawAnim=AssText>It's only today where I realize that the man that
+    I've been looking for, is<d=10>.<d=10>.<d=10>.
+--- !u!222 &1311846235340630460
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311846235340630462}
+  m_CullTransparentMesh: 0
+--- !u!114 &8752798892125752024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311846235340630462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec36313ed6ef59e4bbda806f72a971d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
