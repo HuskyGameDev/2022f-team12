@@ -211,7 +211,15 @@ public class PlayerOverworldControl : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (this.CController.collisionFlags == CollisionFlags.Below)
+        Debug.Log("CCColliderHit - CF: " + this.CController.collisionFlags);
+
+        // If we're reported as being grounded, evaluate what kind of surface that we're on. //
+        // Note: CollisionFlags.None seems to be a weird edge-case result of running down    //
+        //       a slope really fast. A collision occurs, but for some stupid reason         //
+        //       collisionFlags reports it as "None".                                        //
+        if ( 
+            this.CController.collisionFlags == CollisionFlags.Below || 
+            this.CController.collisionFlags == CollisionFlags.None )
         {
             this.collisionNormal = hit.normal;
 
@@ -234,5 +242,11 @@ public class PlayerOverworldControl : MonoBehaviour
     {
         // Draw Interact Sphere.
         Gizmos.DrawWireSphere(InteractOrigin.position, InteractRadius);
+    }
+
+    private void OnGUI()
+    {
+        /*GUI.Box(Rect(10, 10, 120, 25), "Vel: " + CController.velocity);*/
+        
     }
 }
