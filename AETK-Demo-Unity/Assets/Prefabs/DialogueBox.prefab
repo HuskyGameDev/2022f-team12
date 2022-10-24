@@ -114,7 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d9e20776bec0f4e96d732eef225559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DBDialoguer: {fileID: 717870310898415276}
+  BoxAppearTime: 0.4
+  dbDialoguer: {fileID: 717870310898415276}
+  boxRoot: {fileID: 7114225311929515343}
 --- !u!1 &7114225311874663131
 GameObject:
   m_ObjectHideFlags: 0
