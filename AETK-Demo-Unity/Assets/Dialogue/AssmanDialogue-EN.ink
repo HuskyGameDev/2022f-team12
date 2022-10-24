@@ -24,4 +24,4 @@ alright, let's do this- LEEERO
     <drawAnim=mystical><w=mystical>It's only today where I realize that the man that I've been looking for, is<d=10>.<d=10>.<d=10>.
 
     My Dad.
-        ->DialogueTest
+        ->END

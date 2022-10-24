@@ -20,6 +20,13 @@ public class Dialoguer : MonoBehaviour
     private Coroutine dialogueReadCR;
     private bool dialogueReadCRRunning = false;
 
+    public bool IsReading
+    {
+        get => dialogueReadCRRunning;
+    }
+
+    public event System.Action OnDialogueFinished = () => { };
+
     private void Awake()
     {
         this.inkStory = new Story(inkScript.text);
@@ -33,6 +40,11 @@ public class Dialoguer : MonoBehaviour
         this.inkStory.ChoosePathString(knot);
 
         this.dialogueReadCR = StartCoroutine( dialogueRead() );
+    }
+
+    public void Clear()
+    {
+        this.stm.text = "";
     }
 
     private IEnumerator dialogueRead()
@@ -61,6 +73,7 @@ public class Dialoguer : MonoBehaviour
             else
             {
                 remainingStory = false;
+                continue;
             }
 
             // Wait for the spacebar to be pressed. //
@@ -70,5 +83,7 @@ public class Dialoguer : MonoBehaviour
         }
 
         dialogueReadCRRunning = false;
+
+        OnDialogueFinished.Invoke();
     }
 }

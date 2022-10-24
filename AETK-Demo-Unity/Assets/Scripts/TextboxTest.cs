@@ -7,13 +7,20 @@ public class TextboxTest : MonoBehaviour
 {
     public Vector3 TextScale = Vector3.one;
 
-    public Dialoguer dialoguer;
+    public DialogueBox DB;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Pssst. Press Space.");
-        dialoguer.ReadDialogue("DialogueTest");
+        Debug.Log("Pssst. Press 'r' to open the DialogueBox.");
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("r"))
+        {
+            DB.StartDialogue("DialogueTest");
+        }
     }
 
     private static void ScaleV3(ref Vector3 vert, Vector3 middle, Vector3 scale)
