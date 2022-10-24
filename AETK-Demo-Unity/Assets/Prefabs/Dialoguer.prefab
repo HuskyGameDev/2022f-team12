@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1311846235340630463}
+  - component: {fileID: 8752798892125752024}
   - component: {fileID: 1311846235340630461}
   - component: {fileID: 1311846235340630460}
-  - component: {fileID: 8752798892125752024}
   m_Layer: 5
   m_Name: Dialoguer
   m_TagString: Untagged
@@ -39,6 +39,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8752798892125752024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311846235340630462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec36313ed6ef59e4bbda806f72a971d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stm: {fileID: 1311846235340630461}
+  inkScript: {fileID: 4900000, guid: b64ddbe72dc3cc2498ee71e8aa073487, type: 3}
+  defaultDrawAnimation: AssText
 --- !u!114 &1311846235340630461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3297,7 +3312,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 4.3700085
   totalUnreadTime: 0.00001
-  currentReadTime: 9.044955
+  currentReadTime: 4.3700085
   autoRead: 0
   rememberReadPosition: 1
   autoQuality: 1
@@ -3318,15 +3333,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311846235340630462}
   m_CullTransparentMesh: 0
---- !u!114 &8752798892125752024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311846235340630462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec36313ed6ef59e4bbda806f72a971d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
