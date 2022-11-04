@@ -211,7 +211,7 @@ public class PlayerOverworldControl : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log("CCColliderHit - CF: " + this.CController.collisionFlags);
+        //Debug.Log("CCColliderHit - CF: " + this.CController.collisionFlags);
 
         // If we're reported as being grounded, evaluate what kind of surface that we're on. //
         // Note: CollisionFlags.None seems to be a weird edge-case result of running down    //

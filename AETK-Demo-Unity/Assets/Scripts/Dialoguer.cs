@@ -27,6 +27,15 @@ public class Dialoguer : MonoBehaviour
 
     public event System.Action OnDialogueFinished = () => { };
 
+    /// <summary>
+    /// Forwarded to the SuperTextMesh's OnCustomEvent.
+    /// </summary>
+    public event SuperTextMesh.OnCustomAction OnCustomEvent
+    {
+        add { stm.OnCustomEvent += value; }
+        remove { stm.OnCustomEvent -= value; }
+    }
+
     private void Awake()
     {
         this.inkStory = new Story(inkScript.text);
@@ -45,6 +54,11 @@ public class Dialoguer : MonoBehaviour
     public void Clear()
     {
         this.stm.text = "";
+    }
+
+    private void Update()
+    {
+        //Debug.Log($"Reading: {this.stm.}");
     }
 
     private IEnumerator dialogueRead()
@@ -73,7 +87,7 @@ public class Dialoguer : MonoBehaviour
             else
             {
                 remainingStory = false;
-                continue;
+                break;
             }
 
             // Wait for the spacebar to be pressed. //
