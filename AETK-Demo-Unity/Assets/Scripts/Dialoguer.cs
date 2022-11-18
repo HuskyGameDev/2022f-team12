@@ -56,11 +56,6 @@ public class Dialoguer : MonoBehaviour
         this.stm.text = "";
     }
 
-    private void Update()
-    {
-        //Debug.Log($"Reading: {this.stm.}");
-    }
-
     private IEnumerator dialogueRead()
     {
         dialogueReadCRRunning = true;
