@@ -9,6 +9,8 @@ public class TextboxTest : MonoBehaviour
 
     public DialogueBox DB;
 
+    private int lastDialogue = -1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,28 @@ public class TextboxTest : MonoBehaviour
     {
         if (Input.GetKeyDown("r"))
         {
-            DB.StartDialogue("DialogueTest");
+            if (!DB.IsReading)
+            {
+                var dia = (lastDialogue + 1) % 4;
+                lastDialogue = dia;
+                switch (dia)
+                {
+                    case 0:
+                        DB.StartDialogue("DialogueTest.Pog");
+                        break;
+                    case 1:
+                        DB.StartDialogue("DialogueTest.Mystic");
+                        break;
+                    case 2:
+                        DB.StartDialogue("DialogueTest.Guy");
+                        break;
+                }
+            }
+        }
+
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
         }
     }
 

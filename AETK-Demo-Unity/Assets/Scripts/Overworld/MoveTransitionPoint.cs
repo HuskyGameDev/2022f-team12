@@ -32,6 +32,7 @@ public class MoveTransitionPoint : MonoBehaviour
             return pos;
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         var pos = transform.position;
@@ -52,4 +53,5 @@ public class MoveTransitionPoint : MonoBehaviour
             Handles.DrawWireDisc(tp, Vector3.up, 0.2f);
         }
     }
+#endif
 }

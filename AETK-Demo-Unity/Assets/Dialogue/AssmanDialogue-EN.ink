@@ -12,7 +12,7 @@ alright, let's do this- LEEERO
     He was <sub>lanky</sub>,<d=8> <w=seasick>strange</w>,<d=8> <sup>oblong,</sup><d=8> <w>obtuse...</w>
     
     <w=loop>Roundtuse</w>,<d=6> quirky,<d=6> goofy...<d=15><br>and his face looked like this -\-><q=pog>
-        ->Mystic
+        ->END
 
     = Mystic
     <drawAnim=mystical><w=mystical>One of the many things that I've thought about in my time include the right of passage.
@@ -25,3 +25,14 @@ alright, let's do this- LEEERO
 
     My Dad.
         ->END
+    
+    = Guy
+    Greetings supposed "Abs Man"
+    
+    Unfortunately, we at Forty Meter Zone took your staircase for filming.
+    
+    Worry not, we painted it on the wall to maintain the feng shui of your abode.
+
+    Feel free to admire it's cartouche aesthetic.
+        ->END
+        
