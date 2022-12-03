@@ -10,7 +10,7 @@ public class DialogueBox : MonoBehaviour
     public float BoxAppearTime = 1f;
     [Separator]
     [SerializeField]
-    private Dialoguer dbDialoguer;
+    public Dialoguer dialoguer;
     [SerializeField]
     private RectTransform boxRoot;
 
@@ -27,33 +27,45 @@ public class DialogueBox : MonoBehaviour
         boxRoot.localScale = scale;
     }
 
-    public void StartDialogue(string knot)
+    public void OpenBox( System.Action onOpenDone )
     {
-        // Make a fuss if the StartDialogue was called while the Dialoguer was still reading.
-        Assert.IsFalse(dbDialoguer.IsReading);
-
-        // Clear Dialoguer text.
-        dbDialoguer.Clear();
-        
         // Setup box animation. //
         boxRoot
             .DOScaleY(1, this.BoxAppearTime)
             .SetEase(Ease.OutBounce)
-            .OnComplete( () => { dbDialoguer.ReadDialogue(knot); } );
+            .OnComplete(() => { onOpenDone.Invoke(); });
+    }
+
+    public void CloseBox(System.Action onCloseDone)
+    {
+        // Setup box animation. //
+        boxRoot
+            .DOScaleY(0, this.BoxAppearTime)
+            .SetEase(Ease.OutBounce)
+            .OnComplete(() => { onCloseDone.Invoke(); });
+    }
+
+    public void StartDialogue(string knot)
+    {
+        // Make a fuss if the StartDialogue was called while the Dialoguer was still reading.
+        Assert.IsFalse(dialoguer.IsReading);
+
+        // Clear Dialoguer text.
+        dialoguer.Clear();
+
+        // Setup open box animation.
+        OpenBox( () => { dialoguer.ReadDialogue(knot); } );
 
         // Setup post-read animation. //
         System.Action diaFin = null;
         diaFin = () =>
         {
-            boxRoot
-                .DOScaleY(0, this.BoxAppearTime)
-                .SetEase(Ease.OutBounce)
-                .OnComplete( () => { OnBoxDisappear.Invoke(); } );
+            CloseBox( () => { OnBoxDisappear.Invoke(); } );
 
             // Remove self.
-            dbDialoguer.OnDialogueFinished -= diaFin;
+            dialoguer.OnDialogueFinished -= diaFin;
         };
 
-        dbDialoguer.OnDialogueFinished += diaFin;
+        dialoguer.OnDialogueFinished += diaFin;
     }
 }

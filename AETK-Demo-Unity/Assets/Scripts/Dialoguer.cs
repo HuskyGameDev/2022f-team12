@@ -20,10 +20,21 @@ public class Dialoguer : MonoBehaviour
     private Coroutine dialogueReadCR;
     private bool dialogueReadCRRunning = false;
 
-    public bool IsReading
-    {
-        get => dialogueReadCRRunning;
-    }
+    /// <summary>
+    /// Returns if the Dialoguer is currently reading through a branch of text.
+    /// 
+    /// (returns false as soon as the player advances past the last block of text in a branch, 
+    /// or, in Ink terms, an END goto).
+    /// </summary>
+    public bool IsReading => dialogueReadCRRunning;
+
+    /// <summary>
+    /// Returns if the Dialoguer is currently blitting out characters.
+    /// 
+    /// (returns true if characters are being read out, but false as soon as the block hits the end, and true
+    /// again as soon as the player advances to a new block and the block starts reading out.)
+    /// </summary>
+    public bool IsReadingChars => stm.reading;
 
     public event System.Action OnDialogueFinished = () => { };
 

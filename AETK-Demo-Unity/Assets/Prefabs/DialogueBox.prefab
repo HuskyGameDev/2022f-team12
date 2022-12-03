@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoxAppearTime: 0.4
-  dbDialoguer: {fileID: 717870310898415276}
+  dialoguer: {fileID: 717870310898415276}
   boxRoot: {fileID: 7114225311929515343}
 --- !u!1 &7114225311874663131
 GameObject:
@@ -299,7 +299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1311846235340630461, guid: 87a69ba2334ee9342a5e7743f7ed50be, type: 3}
       propertyPath: currentReadTime
-      value: 12.820034
+      value: 12.16593
       objectReference: {fileID: 0}
     - target: {fileID: 1311846235340630461, guid: 87a69ba2334ee9342a5e7743f7ed50be, type: 3}
       propertyPath: topLeftBounds.x
