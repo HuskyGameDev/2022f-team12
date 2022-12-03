@@ -123,6 +123,20 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &116805351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1a6c3a5d2dc438d9a101c68249b2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showFoldout: 0
+  count: 10
 --- !u!114 &273170821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,32 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showFoldout: 0
   count: 10
---- !u!114 &292289323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1a6c3a5d2dc438d9a101c68249b2a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showFoldout: 0
-  count: 10
---- !u!114 &327526407 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6294479811841383629, guid: 0fbe19e33ca9aaa48aa1b49681463bac, type: 3}
-  m_PrefabInstance: {fileID: 1688380677}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5d9e20776bec0f4e96d732eef225559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!43 &328364160
+--- !u!43 &310216911
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -326,21 +315,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &389873982
+--- !u!114 &327526407 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6294479811841383629, guid: 0fbe19e33ca9aaa48aa1b49681463bac, type: 3}
+  m_PrefabInstance: {fileID: 1688380677}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1a6c3a5d2dc438d9a101c68249b2a9, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d9e20776bec0f4e96d732eef225559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showFoldout: 0
-  count: 10
---- !u!43 &646969995
+--- !u!43 &328364160
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1086,6 +1072,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1395072277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1a6c3a5d2dc438d9a101c68249b2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showFoldout: 0
+  count: 10
 --- !u!1 &1500269150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,20 +1261,6 @@ MonoBehaviour:
   DialogueKnot: DialogueTest
   anim: {fileID: 747424698}
   animBoolParam: Talking
---- !u!114 &1619724133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1a6c3a5d2dc438d9a101c68249b2a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showFoldout: 0
-  count: 10
 --- !u!1001 &1688380677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1550,6 +1536,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6837237482576447310, guid: 0d50d742da3850645bcbb60b75c504e3, type: 3}
   m_PrefabInstance: {fileID: 1775100279}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1976029816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1a6c3a5d2dc438d9a101c68249b2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showFoldout: 0
+  count: 10
 --- !u!114 &2042387028
 MonoBehaviour:
   m_ObjectHideFlags: 0

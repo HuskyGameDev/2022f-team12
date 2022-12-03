@@ -1,15 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MyBox;
 
-public class TestInteraction : MonoBehaviour, IInteractable
+public class DialogueInteration : MonoBehaviour, IInteractable
 {
     public DialogueBox DB;
 
     public string DialogueKnot;
 
+    [Separator]
+
+    /// <summary>
+    /// An animator to control based on wether the Dialoguer's text is blitting.
+    /// 
+    /// If null, animatior control will be ignored.
+    /// </summary>
     [SerializeField]
     private Animator anim;
+
+    [ConditionalField( nameof(anim) )]
     [SerializeField]
     private string animBoolParam;
 
@@ -44,7 +54,8 @@ public class TestInteraction : MonoBehaviour, IInteractable
     {
         while (true)
         {
-            anim.SetBool( animBoolParam, DB.dialoguer.IsReadingChars );
+            if (anim != null)
+                anim.SetBool( animBoolParam, DB.dialoguer.IsReadingChars );
 
             yield return new WaitForEndOfFrame();
         }
