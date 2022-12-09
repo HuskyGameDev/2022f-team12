@@ -11,9 +11,19 @@ public class QuadShear : MonoBehaviour
     private Mesh mesh;
     private Vector3[] vertsOrigin;
 
-    private void Start()
+    private void Awake()
     {
-        this.mesh = GetComponent<MeshFilter>().sharedMesh;
+        // Playing
+        if (Application.isPlaying)
+        {
+            this.mesh = GetComponent<MeshFilter>().mesh;
+        }
+        // Editor
+        else
+        {
+            this.mesh = GetComponent<MeshFilter>().sharedMesh;
+        }
+        
         this.vertsOrigin = mesh.vertices;
     }
 

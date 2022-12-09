@@ -18,7 +18,7 @@ public class DialogueBox : MonoBehaviour
 
     public event System.Action OnBoxDisappear = () => { };
 
-    public bool IsReading => dbDialoguer.IsReading;
+    public bool IsReading => dialoguer.IsReading;
 
     public void Start()
     {
