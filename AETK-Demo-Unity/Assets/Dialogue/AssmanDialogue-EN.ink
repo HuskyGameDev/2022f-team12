@@ -35,4 +35,30 @@ alright, let's do this- LEEERO
 
     Feel free to admire it's cartouche aesthetic.
         ->END
-        
+
+== BigWalls ==
+    = Guy
+    Hello, Copernicus.
+    
+    Welcome to Big Walls Inc.<br>Home of the finest collection of big walls.
+    
+    I encourage you to admire our selection of oblong with words of encouragement and fruit snacks.
+    
+    They require more attention than I alone can give them.
+        ->END
+    
+    = Walls
+    <w=loop>We're walls. <d=10>Walls. <d=10>We're the walls!
+    
+    <w=loop>We sit and stare, and we don't care-
+    
+    <w=loop>We're the walls!
+        ->END
+    
+    = Walls_Old
+    <w>Hey. <d=10>Heyyyyyyyyyyy.
+    
+    <w>We are the walls.
+    
+    <w>We require sustenance-- <w=loop>blehhhhhhhhhhh
+        ->END

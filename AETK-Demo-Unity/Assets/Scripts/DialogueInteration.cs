@@ -41,7 +41,8 @@ public class DialogueInteration : MonoBehaviour, IInteractable
             StopAllCoroutines();
 
             // Set the animBoolParam to false, just in case the user skipped through all the text.
-            anim.SetBool(animBoolParam, false);
+            if ( anim != null )
+                anim.SetBool(animBoolParam, false);
 
             // Re-enable player control.
             pc.enabled = true;
