@@ -164,7 +164,7 @@ public class PlayerOverworldControl : MonoBehaviour
 
         yVel -= GravityAcceleration * Time.fixedDeltaTime;
 
-        if (Input.GetButtonDown("OW_Jump"))
+        if (Input.GetButtonDown("OW_Jump") && this.CController.isGrounded)
         {
             Debug.Log("Jump!");
 

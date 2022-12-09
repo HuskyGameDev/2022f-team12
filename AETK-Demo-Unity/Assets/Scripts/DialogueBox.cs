@@ -18,6 +18,8 @@ public class DialogueBox : MonoBehaviour
 
     public event System.Action OnBoxDisappear = () => { };
 
+    public bool IsReading => dbDialoguer.IsReading;
+
     public void Start()
     {
         var scale = boxRoot.localScale;
