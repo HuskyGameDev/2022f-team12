@@ -52,8 +52,13 @@ public class PlayerOverworldControl : MonoBehaviour
         if ( !CController.isGrounded )
             goto PostInteractionCheck;
 
-        // Check for overlapping Overworld interactions if the interact button is pressed. //
-        if (Input.GetButtonDown("OW_Interact"))
+        if ( Input.GetKeyDown("escape") )
+        {
+            Application.Quit();
+        }
+
+            // Check for overlapping Overworld interactions if the interact button is pressed. //
+            if (Input.GetButtonDown("OW_Interact"))
         {
             string castLayer = "";
 

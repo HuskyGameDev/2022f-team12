@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DialogueTest.unity
-    guid: cdfb6f8513628964daf54ce1e5a5671c
+    path: Assets/Scenes/Room Transition Test.unity
+    guid: 73dc37ea4539d9845839943083ba9fb8
   m_configObjects: {}
